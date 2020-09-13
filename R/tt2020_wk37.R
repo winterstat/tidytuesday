@@ -1,5 +1,8 @@
 #### Tidy Tuesday: 2020 Week 37
 
+## Plot layout used: https://github.com/MaiaPelletier/tidytuesday/blob/master/R/2020_Week37_Friends.R
+## Other resources: https://cedricscherer.netlify.app/2019/05/17/the-evolution-of-a-ggplot-ep.-1/
+
 ## Load packages
 #install.packages("friends")
 library("friends")
