@@ -2,6 +2,7 @@
 
 ## Plot layout used: https://github.com/MaiaPelletier/tidytuesday/blob/master/R/2020_Week37_Friends.R
 ## Other resources: https://cedricscherer.netlify.app/2019/05/17/the-evolution-of-a-ggplot-ep.-1/
+## First real "How you doin'?": https://public.tableau.com/profile/mateusz.karmalski#!/vizhome/HowYouDoin/Howyoudoin
 
 ## Load packages
 #install.packages("friends")
@@ -100,11 +101,11 @@ arrows <-
 ## This one separate because I want the curvature to be different
 arrows2 <- 
   tibble(
-    x1 = -9.5,
-    x2 = -9.2,
-    y1 = 22.2,
-    y2 = 23
-    )
+    x1 = -3.5,-9.5,
+    x2 = -3.8,-9.2,
+    y1 = 13.8, 22.2,
+    y2 = 13, 23
+  )
 
 ## Create plot
 g <- ggplot(doin_friends, aes(-season, episode)) + 
@@ -177,6 +178,10 @@ g <- ggplot(doin_friends, aes(-season, episode)) +
   annotate(
     "text", x = -4.5, y = 15, size = 2.8, color = "gray20", lineheight = .9, hjust = .1,
     label = glue::glue("S04E13: {epi_title413}")
+  ) +
+  annotate(
+    "text", x = -3.5, y = 15, size = 2.8, color = "gray20", lineheight = .9, hjust = .1,
+    label = glue::glue("First real occurance of \"How you doin'?\"")
   ) +
   annotate(
     "text", x = -8.5, y = 21, size = 2.8, color = "gray20", lineheight = .9, hjust = .1,
