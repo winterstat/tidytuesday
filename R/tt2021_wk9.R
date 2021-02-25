@@ -96,7 +96,7 @@ g <- ggplot(employed1920_gender,
   labs(title = "Change in employment in the USA from 2019 to 2020",
        subtitle = "Comparing majority <b><span style = 'color:#B7E4F9FF;'>male</span></b> to majority <b><span style = 'color:#FB6467FF;'>female</span></b> fields",
        caption = "@winterstat | #TidyTuesday | Data: {Employment} by BLS",
-       x = "Women's share of jobs in 2019",
+       x = "Percentage of jobs occupied by women in 2019",
        y = "Percentage change in employment from 2019 to 2020") +
   ## Add annotation about insane growth transport field
   annotate(
