@@ -1,11 +1,7 @@
-## This plot is part of the #DuBoisChallenge. 
-## I am recreating the plot for Challenge 03.
-## Additional info can be found here:
-## https://github.com/ajstarks/dubois-data-portraits/tree/master/challenge
+# --------------------------------#
+#### Tidy Tuesday: 2021 Week 9 ####
+# --------------------------------#
 
-
-## I have to give 100% credit to Jack Davison  for the super smart method for creating empty space
-## https://github.com/jack-davison/TidyTuesday/blob/master/R/2021_02_16_dubois.R
 
 # Set-up --------------------------------------------------------------------
 
@@ -66,6 +62,8 @@ employed1920_gender <- employed1920 %>%
          maj_fem_2019 = if_else(employ_n_fem_2019 < .5, 0, 1),
          employ_n_diff = (employ_n_2020 - employ_n_2019),
          employ_n_diff_p = (employ_n_2020 - employ_n_2019)/employ_n_2019)
+
+# Plot --------------------------------------------------------------------
 
 ## Pick colors
 show_col(pal_rickandmorty("schwifty")(12))
