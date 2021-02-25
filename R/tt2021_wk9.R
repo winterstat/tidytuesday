@@ -17,11 +17,7 @@ library(showtext)
 op = showtext_opts(dpi = 300)
 
 ## Loading Google fonts (https://fonts.google.com/)
-##  font-family: 'Quicksand', used for everything except title and percentages;
 font_add_google("Reenie Beanie", "reenie")
-##  font-family: 'Big Shoulders', used for percentages
-#font_add_google("Big Shoulders Display", "shoulders")
-## font-family: 'Mono', used for title
 
 ## Automatically use showtext to render text
 showtext_auto()
