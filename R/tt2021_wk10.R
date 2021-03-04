@@ -2,6 +2,8 @@
 #### Tidy Tuesday: 2021 Week 10 ###
 # --------------------------------#
 
+# Bubble plot (plot 2) inspired by: @margaretsiple
+# https://github.com/mcsiple/tidytuesday/blob/master/2021/5_2021_plastics.R
 
 # Set-up --------------------------------------------------------------------
 
@@ -80,7 +82,7 @@ p1 <- theme_time %>%
                      expand = c(0,0)) +
   coord_equal() +
   labs(
-    title = "Themes in Superbowl ads over time",
+    title = "Themes in Super Bowl ads over time",
     subtitle = "Ten most advertised companies included. Each block represents one ad.",
     x = "Year",
     y = "Count"
@@ -130,6 +132,7 @@ p2 <- youtube %>%
   )
 
 # Combine plots ------------------------------------------------------------
+
 plot <- p1 + p2 + plot_layout(heights = c(1,2))
 
 plot_final <- plot + plot_annotation(
