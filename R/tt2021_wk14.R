@@ -89,7 +89,7 @@ ggplot(plot_dat, aes(x = xlabels, y = n_cat, group = categories, fill = categori
         plot.background = element_rect(fill = "#9EA0A5", color = "#9EA0A5"),
         legend.position = "bottom",
         legend.justification = "center",
-    legend.text = element_text(size = 9),
+    legend.text = element_text(size = 9, color = "white"),
     plot.title = element_text(color = "white", face = "bold", 
                               size = 22, hjust = .5, family = "open"),
     plot.subtitle = element_text(color = "white", 
