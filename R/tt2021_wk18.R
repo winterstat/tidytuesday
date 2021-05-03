@@ -91,7 +91,7 @@ ggplot(sentiment_plot, aes(y = factor(departure_code), group = sentiment, fill =
   facet_wrap(vars(sentiment), nrow = 2) +
   scale_fill_manual(values = color_pal) +
   labs(title = "How do we feel about CEO dismissals?",
-       subtitle = "How the reason for a CEO's dismissal affects which sentiments areexpressed\nabove or below average in messaging about the dismissal\n",
+       subtitle = "How the reason for a CEO's dismissal affects which sentiments are expressed\nabove or below average in messaging about the dismissal\n",
        caption = "@winterstat | #TidyTuesday | Data: [Data is Plural/Gentry et al.]",
        x = "",
        y = "") +
